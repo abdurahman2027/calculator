@@ -6,6 +6,11 @@ function clearScreen() {
     document.getElementById("screen").value = "";
 }
 
+function backspace() {
+    let screen = document.getElementById("screen");
+    screen.value = screen.value.slice(0, -1);
+}
+
 function invert() {
     let screen = document.getElementById("screen");
     if (screen.value) {
